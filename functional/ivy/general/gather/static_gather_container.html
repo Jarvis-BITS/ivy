@@ -244,6 +244,29 @@ Default is False.</p></li>
 the specified axis.</p>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<p>With one <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> input:
+&gt;&gt;&gt; x = ivy.Container(a=ivy.array([0., 1., 2.]),                           b=ivy.array([4., 5., 6.]))
+&gt;&gt;&gt; y = ivy.array([0, 1])
+&gt;&gt;&gt; print(ivy.static_gather(x, y))
+&gt;&gt;&gt; print(z)
+{</p>
+<blockquote>
+<div><p>a: ivy.array(0., 1.),
+b: ivy.array(4., 5.)</p>
+</div></blockquote>
+<p>}
+With multiple <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> inputs:
+&gt;&gt;&gt; x = ivy.Container(a=ivy.array([0., 1., 2.]),                           b=ivy.array([4., 5., 6.]))
+&gt;&gt;&gt; y = ivy.Container(a=ivy.array([0, 1]),                           b=ivy.array([1, 2]))
+&gt;&gt;&gt; y = ivy.Container.static_gather(x, y)
+&gt;&gt;&gt; print(y)
+{</p>
+<blockquote>
+<div><p>a: ivy.array([0., 1.]),
+b: ivy.array(5., 6.)</p>
+</div></blockquote>
+<p>}</p>
 </dd></dl>
 
 <div class="line-block">
