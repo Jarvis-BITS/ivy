@@ -192,7 +192,7 @@
 <span class="sd">        ivy.Array instance method variant of ivy.gather. This method simply wraps the</span>
 <span class="sd">        function, and so the docstring for ivy.gather also applies to this method</span>
 <span class="sd">        with minimal changes.</span>
-<span class="sd">        </span>
+
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        self</span>
@@ -206,21 +206,24 @@
 <span class="sd">            &#39;cpu&#39; etc. Same as x if None.</span>
 <span class="sd">        out</span>
 <span class="sd">            optional output array, for writing the result to.</span>
-<span class="sd">            </span>
+
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        ret</span>
-<span class="sd">            New array with the values gathered at the specified indices along the specified axis.</span>
+<span class="sd">            New array with the values gathered at the specified indices along</span>
+<span class="sd">            the specified axis.</span>
+
 <span class="sd">        Both the description and the type hints above assumes an array input for simplicity,</span>
 <span class="sd">        but this function is *nestable*, and therefore also accepts :code:`ivy.Container`</span>
 <span class="sd">        instances in place of any of the arguments.</span>
-<span class="sd">        </span>
+
 <span class="sd">        Examples</span>
 <span class="sd">        --------</span>
 <span class="sd">        &gt;&gt;&gt; x = ivy.array([0., 1., 2.])</span>
 <span class="sd">        &gt;&gt;&gt; y = ivy.array([0, 1])</span>
 <span class="sd">        &gt;&gt;&gt; print(ivy.gather(x, y))</span>
 <span class="sd">        ivy.array([0., 1.])</span>
+
 <span class="sd">        &gt;&gt;&gt; x = ivy.array([[0., 1., 2.], \</span>
 <span class="sd">                            [3., 4., 5.]])</span>
 <span class="sd">        &gt;&gt;&gt; y = ivy.array([[0, 1], \</span>
@@ -231,7 +234,7 @@
 <span class="sd">        &gt;&gt;&gt; print(z)</span>
 <span class="sd">        ivy.array([[0., 1.],</span>
 <span class="sd">                    [4., 5.]])</span>
-<span class="sd">    </span>
+
 <span class="sd">        &gt;&gt;&gt; x = ivy.array([[[0., 1.], [2., 3.]], \</span>
 <span class="sd">                            [[4., 5.], [6., 7.]], \</span>
 <span class="sd">                            [[8., 9.], [10., 11.]]])</span>
