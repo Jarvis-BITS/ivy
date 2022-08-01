@@ -2243,6 +2243,14 @@
 <span class="sd">    ret</span>
 <span class="sd">        an array containing the element-wise results. The returned array</span>
 <span class="sd">        must have a data type of ``bool``.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; x = ivy.array([True, False, True, False])</span>
+<span class="sd">    &gt;&gt;&gt; y = ivy.array([True, True, False, False])</span>
+<span class="sd">    &gt;&gt;&gt; z = x.logical_xor(y)</span>
+<span class="sd">    &gt;&gt;&gt; print(z)</span>
+<span class="sd">    ivy.array([False,  True,  True, False])</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
@@ -3082,6 +3090,25 @@
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    [1 0 0 1]</span>
 
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="to_list"><a class="viewcode-back" href="../../../functional/ivy/general/to_list/to_list_array.html#ivy.array.array_methods.to_list">[docs]</a><span class="k">def</span> <span class="nf">to_list</span><span class="p">(</span><span class="bp">self</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Array</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    ivy.Array instance method variant of ivy.to_list. This method simply wraps</span>
+<span class="sd">    the function, and so the docstring for ivy.to_list also applies to this method</span>
+<span class="sd">    with minimal changes.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    self</span>
+<span class="sd">        input array.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    ret</span>
+<span class="sd">        A list representation of the input array ``x``.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">pass</span></div>
 
