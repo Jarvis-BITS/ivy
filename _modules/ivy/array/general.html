@@ -251,9 +251,7 @@
 <span class="sd">                            [[2, 0]]])</span>
 <span class="sd">        &gt;&gt;&gt; z = x.gather(y, axis=0)</span>
 <span class="sd">        &gt;&gt;&gt; print(z)</span>
-<span class="sd">        ivy.array([[[ 0., 5.], [ 2., 7.]], \</span>
-<span class="sd">                    [[ 4., 9.],[ 6., 11.]], \</span>
-<span class="sd">                    [[ 8., 1.], [10., 3.]]])</span>
+<span class="sd">        ivy.array([[[0., 5.]], [[4., 9.]], [[8., 1.]]])</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">ivy</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">indices</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">)</span></div>
 
